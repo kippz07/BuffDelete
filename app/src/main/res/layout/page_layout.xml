@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/heroImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buff"
+        android:layout_above="@+id/delete"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bastion2"/>
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buff"
+        android:layout_above="@+id/delete"
+        android:padding="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/buff_arrow"/>
+
+    <ImageView
+        android:id="@+id/cross"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buff"
+        android:layout_above="@+id/delete"
+        android:padding="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/delete_cross"/>
+
+    <TextView
+        android:id="@+id/buff"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:background="@color/buff"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:text="Buff"/>
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/delete"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:text="Delete"/>
+
+</RelativeLayout>
